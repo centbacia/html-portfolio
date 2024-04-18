@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 10</title>
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          scroll-behavior: smooth;
+          /* border: 0.5px dotted green; */
+          color: rgb(0, 0, 0);
+        }
+        
+        html {
+          font-size: 62.5%;
+        }
+        
+        ul,
+        ol {
+          list-style: none;
+        }
+        
+        a {
+          text-decoration: none;
+        }
+        
+        body {
+            font-size: 1.6rem;
+            overflow-wrap: break-word;
+            text-wrap: pretty;
+            hyphens: auto;
+            font-family: "Merriweather", serif;
+            line-height: 1.5;
+            background-color: #777475;
+        }
+        
+        /* wrap all of the content inside the body to a div with a class of "site" */
+        .site {
+            min-height: 100dvh;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns: minmax(0, 1fr);
+        }
+
+        header nav ul {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1em;
+            margin-left: 1em;
+        }
+
+        header nav ul a{
+            transition: all 333ms ease;
+        }
+
+        header nav ul a:hover{
+            color: rgb(202, 191, 30);
+            font-size: 1.1em;
+            text-decoration: underline;
+        }
+
+        hr {
+            border: .001em solid #000000;
+            max-width: 99%;
+            margin: 1em auto;
+        }
+
+        section {
+            margin-left: 1em;
+        }
+
+        section h1{
+            margin-bottom: .5em;
+        }
+
+        .design-images{
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="site">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="/html-portfolio/index.html">Home</a></li>|
+                    <li><a href="/html-portfolio/assets/html/skills.html">Exercises</a></li>|
+                    <li><a href="/html-portfolio/assets/html/exercises.html">Exercises</a></li>|
+                    <li><a href="/html-portfolio/assets/html/exercise-10-designs.html">Designs</a></li>|
+                    <li><a href="https://www.facebook.com/">Facebook</a></li>|
+                    <li><a href="/html-portfolio/assets/html/contactme.html">Contact</a></li>
+                </ul>
+            </nav>
+            <hr>
+        </header>
+        <main>
+            <section>
+                <h1>My Designs</h1>
+                    <section class="design-images">
+                        <picture>
+
+                            <img src="/html-portfolio/assets/img/Banner.jpg" alt="image">
+                        </picture>
+                        <picture>
+                            
+                            <img src="/html-portfolio/assets/img/Banner.gif" alt="image">
+                        </picture>
+                    </section>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
