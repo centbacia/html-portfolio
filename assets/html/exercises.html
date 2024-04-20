@@ -4,91 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercises</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         * {
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-          scroll-behavior: smooth;
-          /* border: 0.5px dotted green; */
-          color: rgb(0, 0, 0);
-        }
-        
-        html {
-          font-size: 62.5%;
-        }
-        
-        ul,
-        ol {
-          list-style: none;
-        }
-        
-        a {
-          text-decoration: none;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
         
         body {
-            font-size: 1.6rem;
-            overflow-wrap: break-word;
-            text-wrap: pretty;
-            hyphens: auto;
-            font-family: "Merriweather", serif;
-            line-height: 1.5;
-            background-color: #c2b7b5;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
         }
         
-        /* wrap all of the content inside the body to a div with a class of "site" */
         .site {
-            min-height: 100dvh;
+            min-height: 100vh;
             display: grid;
             grid-template-rows: auto 1fr auto;
             grid-template-columns: minmax(0, 1fr);
+            padding: 20px;
         }
-
+        
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #343a40;
+            color: #fff;
+        }
+        
         header nav ul {
-            display: flex;
-            gap: 1rem;
-            margin-top: 1em;
-            margin-left: 1em;
+            list-style: none;
+            padding: 0;
+            margin: 0;
         }
-
-        header nav ul a{
-            transition: all 333ms ease;
+        
+        header nav ul li {
+            display: inline;
+            margin: 0 10px;
         }
-
-        header nav ul a:hover{
-            color: rgb(98, 0, 255);
-            font-size: 1.1em;
-            text-decoration: underline;
+        
+        header nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s;
         }
-
-        hr {
-            border: .001em solid #000000;
-            max-width: 99%;
-            margin: 1em auto;
+        
+        header nav ul li a:hover {
+            color: #ffc107;
         }
-
+        
+        main {
+            padding: 40px 20px;
+        }
+        
         section {
-            margin-left: 1em;
+            margin-bottom: 40px;
+            margin-left: 20px; /* Adjusted margin-left */
         }
-
-        section h1{
-            margin-bottom: .5em;
+        
+        h1 {
+            margin-bottom: 20px;
+            color: #343a40;
+            font-weight: bold;
+            font-size: 2rem;
         }
-
-        section ol {
-            list-style: decimal;
-            margin-left: 2em;
+        
+        ol {
+            list-style: none;
+            padding: 0;
         }
-
-        section ol a{
-            transition: all 333ms ease;
+        
+        li {
+            margin-bottom: 10px;
         }
-
-        section ol a:hover{
-            color: rgb(232, 107, 140);
-            font-size: 1.1em;
-            text-decoration: underline;
+        
+        a {
+            color: #343a40;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        a:hover {
+            color: #007bff;
         }
     </style>
 </head>
@@ -105,27 +104,21 @@
                     <li><a href="/html-portfolio/assets/html/contactme.html">Contact</a></li>
                 </ul>
             </nav>
-            <hr>
         </header>
         <main>
             <section>
                 <h1>My Exercises</h1>
-                    <ol>
-                        <li><a href="/html-portfolio/assets/html/exercise-1-heading-element.html"">Heading Element</a></li>
-                        <li><a href="/html-portfolio/assets/html/exercise-2-paragraph-element.html">Paragraph Element</a></li>
-                        <li><a href="/html-portfolio/assets/html/exercise-3-void-elements.html">Void Elements</a></li>
-                        <li><a href="/html-portfolio/assets/html/exercise-4-movie-ranking.html">Movie Ranking</a></li>
-                        <li><a href="/html-portfolio/assets/html/exercise-5-list-element.html">List Element</a></li>
-                        <li><a href="/html-portfolio/assets/html/exercise-6-nesting-and-indentation.html">Nesting and Indentation</a></li>
-                        <li><a href="/html-portfolio/assets/html/exercise-7-anchor-element.html">Anchor Element</a></li>
-                        <li><a href="/html-portfolio/assets/html/exercise-8-image-element.html">Image Element</a></li>
-                        <li><a href="/html-portfolio/assets/html/exercise-9-birthday-invitation.html">Birthday Invitation</a></li>
-                        <li><a href="/html-portfolio/assets/html/exercise-10-designs.html"></a>Designs</li>
-                        <li><a href="/html-portfolio/assets/html/exercise-11-my-portfolio.html"></a>Portfolio</li>
-                        <li><a href="/html-portfolio/assets/html/exercise-12-file-paths.html"></a>File-paths</li>
-                        <li><a href="/html-portfolio/assets/html/exercises.html"></a>Exercises</li>
-                        <li><a href="/html-portfolio/assets/html/contact-me.html"></a>Contact</li>
-                    </ol>
+                <ol>
+                    <li><a href="/html-portfolio/assets/html/exercise-1-heading-element.html">Heading Element</a></li>
+                    <li><a href="/html-portfolio/assets/html/exercise-2-paragraph-element.html">Paragraph Element</a></li>
+                    <li><a href="/html-portfolio/assets/html/exercise-3-void-elements.html">Void Elements</a></li>
+                    <li><a href="/html-portfolio/assets/html/exercise-4-movie-ranking.html">Movie Ranking</a></li>
+                    <li><a href="/html-portfolio/assets/html/exercise-5-list-element.html">List Element</a></li>
+                    <li><a href="/html-portfolio/assets/html/exercise-6-nesting-and-indentation.html">Nesting and Indentation</a></li>
+                    <li><a href="/html-portfolio/assets/html/exercise-7-anchor-element.html">Anchor Element</a></li>
+                    <li><a href="/html-portfolio/assets/html/exercise-8-image-element.html">Image Element</a></li>
+                    <li><a href="/html-portfolio/assets/html/exercise-9-birthday-invitation.html">Birthday Invitation</a></li>
+                </ol>
             </section>
         </main>
     </div>
